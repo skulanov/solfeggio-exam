@@ -51,7 +51,7 @@ function TicketSectionItem({ section }: { section: TicketSection }) {
       {section.image && (
         <div className="mb-4 bg-white p-4 rounded-lg shadow-sm border border-brand-black/5">
           <img 
-            src={`/images/${section.image}`} 
+            src={`images/${section.image}`} 
             alt={section.title} 
             className="w-full max-w-2xl mx-auto h-auto rounded"
             referrerPolicy="no-referrer"
@@ -61,7 +61,7 @@ function TicketSectionItem({ section }: { section: TicketSection }) {
 
       {section.audio && !section.subItems && (
         <div className="mt-2">
-          <AudioButton src={`/audio/${section.audio}`} />
+          <AudioButton src={`audio/${section.audio}`} />
         </div>
       )}
 
@@ -71,7 +71,7 @@ function TicketSectionItem({ section }: { section: TicketSection }) {
             <div key={idx} className="flex flex-wrap items-center gap-4 pl-4 border-l-2 border-brand-red/20">
               {item.text && <span className="musical-text text-lg">{item.text}</span>}
               {item.label && <span className="font-medium text-brand-black/70">{item.label}</span>}
-              {item.audio && <AudioButton src={`/audio/${item.audio}`} />}
+              {item.audio && <AudioButton src={`audio/${item.audio}`} />}
             </div>
           ))}
         </div>
@@ -119,7 +119,7 @@ export default function App() {
             <div className="mb-12 w-full flex justify-center">
               <img 
                 id="logo"
-                src="/images/logo5.png" 
+                src="images/logo5.png" 
                 alt="Сольфеджио Лого" 
                 className="w-full max-w-[200px] h-auto saturate-110"
                 referrerPolicy="no-referrer"

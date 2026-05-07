@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Spectral", ui-serif, Georgia, serif;
+  
+  --color-brand-cream: #FFE3A1;
+  --color-brand-red: #B22222;
+  --color-brand-black: #1A1A1B;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-cream text-brand-black font-sans antialiased;
+  }
+}
+
+.ticket-content h1, .ticket-content h2, .ticket-content h3 {
+  @apply font-serif;
+}
+
+.musical-text {
+  @apply font-serif italic;
+}
